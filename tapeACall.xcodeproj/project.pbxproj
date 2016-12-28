@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DC6E1F3E1A1EA2C38DFB107 /* Pods_tapeACall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F4E825FE1494FB7401751C /* Pods_tapeACall.framework */; };
+		AD1D9F101E08BFFA002BDF78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1D9F0F1E08BFFA002BDF78 /* AppDelegate.swift */; };
+		AD1D9F121E08BFFA002BDF78 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1D9F111E08BFFA002BDF78 /* MainVC.swift */; };
+		AD1D9F151E08BFFA002BDF78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1D9F131E08BFFA002BDF78 /* Main.storyboard */; };
+		AD1D9F171E08BFFA002BDF78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD1D9F161E08BFFA002BDF78 /* Assets.xcassets */; };
+		AD1D9F1A1E08BFFA002BDF78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1D9F181E08BFFA002BDF78 /* LaunchScreen.storyboard */; };
+		AD1D9F251E08BFFA002BDF78 /* tapeACallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1D9F241E08BFFA002BDF78 /* tapeACallTests.swift */; };
+		AD1D9F301E08BFFA002BDF78 /* tapeACallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1D9F2F1E08BFFA002BDF78 /* tapeACallUITests.swift */; };
+		AD1D9F3E1E08CC10002BDF78 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1D9F3D1E08CC10002BDF78 /* SettingVC.swift */; };
+		AD33C7921E0920FD006496A8 /* ItemSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD33C7911E0920FD006496A8 /* ItemSettingCell.swift */; };
+		AD33C7961E092BD1006496A8 /* ItemRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD33C7951E092BD1006496A8 /* ItemRecordCell.swift */; };
+		AD33C7981E093146006496A8 /* RecordingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD33C7971E093146006496A8 /* RecordingsVC.swift */; };
+		AD44CD891E0B6D6C00885CD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44CD881E0B6D6C00885CD5 /* ViewController.swift */; };
+		AD5E736B1E0CCB4C00A9EA4B /* ChangeEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5E736A1E0CCB4C00A9EA4B /* ChangeEmailVC.swift */; };
+		AD5E736D1E0CCB8900A9EA4B /* AccountTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5E736C1E0CCB8900A9EA4B /* AccountTableVC.swift */; };
+		AD5E736F1E0CCCB900A9EA4B /* AccessNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5E736E1E0CCCB900A9EA4B /* AccessNumberVC.swift */; };
+		AD5E73711E0CD04800A9EA4B /* ItemAccessNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5E73701E0CD04800A9EA4B /* ItemAccessNumberCell.swift */; };
+		B2AD2D361E125C02001C53DC /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AD2D351E125C02001C53DC /* Recording.swift */; };
+		B2AD2D381E125E89001C53DC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AD2D371E125E89001C53DC /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD1D9F211E08BFFA002BDF78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD1D9F041E08BFF9002BDF78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD1D9F0B1E08BFF9002BDF78;
+			remoteInfo = tapeACall;
+		};
+		AD1D9F2C1E08BFFA002BDF78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD1D9F041E08BFF9002BDF78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD1D9F0B1E08BFF9002BDF78;
+			remoteInfo = tapeACall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		635F0833AE51E9BEF24D09D9 /* Pods-tapeACall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tapeACall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tapeACall/Pods-tapeACall.debug.xcconfig"; sourceTree = "<group>"; };
+		6A9C359FD144B7CBA5397E0E /* Pods-tapeACall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tapeACall.release.xcconfig"; path = "Pods/Target Support Files/Pods-tapeACall/Pods-tapeACall.release.xcconfig"; sourceTree = "<group>"; };
+		AD1D9F0C1E08BFFA002BDF78 /* tapeACall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tapeACall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD1D9F0F1E08BFFA002BDF78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD1D9F111E08BFFA002BDF78 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		AD1D9F141E08BFFA002BDF78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD1D9F161E08BFFA002BDF78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD1D9F191E08BFFA002BDF78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD1D9F1B1E08BFFA002BDF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD1D9F201E08BFFA002BDF78 /* tapeACallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tapeACallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD1D9F241E08BFFA002BDF78 /* tapeACallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tapeACallTests.swift; sourceTree = "<group>"; };
+		AD1D9F261E08BFFA002BDF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD1D9F2B1E08BFFA002BDF78 /* tapeACallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tapeACallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD1D9F2F1E08BFFA002BDF78 /* tapeACallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tapeACallUITests.swift; sourceTree = "<group>"; };
+		AD1D9F311E08BFFA002BDF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD1D9F3D1E08CC10002BDF78 /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		AD33C7911E0920FD006496A8 /* ItemSettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSettingCell.swift; sourceTree = "<group>"; };
+		AD33C7951E092BD1006496A8 /* ItemRecordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRecordCell.swift; sourceTree = "<group>"; };
+		AD33C7971E093146006496A8 /* RecordingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingsVC.swift; sourceTree = "<group>"; };
+		AD44CD881E0B6D6C00885CD5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD5E736A1E0CCB4C00A9EA4B /* ChangeEmailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeEmailVC.swift; sourceTree = "<group>"; };
+		AD5E736C1E0CCB8900A9EA4B /* AccountTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableVC.swift; sourceTree = "<group>"; };
+		AD5E736E1E0CCCB900A9EA4B /* AccessNumberVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessNumberVC.swift; sourceTree = "<group>"; };
+		AD5E73701E0CD04800A9EA4B /* ItemAccessNumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemAccessNumberCell.swift; sourceTree = "<group>"; };
+		B2AD2D351E125C02001C53DC /* Recording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		B2AD2D371E125E89001C53DC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D3F4E825FE1494FB7401751C /* Pods_tapeACall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tapeACall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD1D9F091E08BFF9002BDF78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DC6E1F3E1A1EA2C38DFB107 /* Pods_tapeACall.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1D9F1D1E08BFFA002BDF78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1D9F281E08BFFA002BDF78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28ABEB23A1B8831FFDA83AD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3F4E825FE1494FB7401751C /* Pods_tapeACall.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6517A94910891BCA2438C5A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				635F0833AE51E9BEF24D09D9 /* Pods-tapeACall.debug.xcconfig */,
+				6A9C359FD144B7CBA5397E0E /* Pods-tapeACall.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD1D9F031E08BFF9002BDF78 = {
+			isa = PBXGroup;
+			children = (
+				AD1D9F0E1E08BFFA002BDF78 /* tapeACall */,
+				AD1D9F231E08BFFA002BDF78 /* tapeACallTests */,
+				AD1D9F2E1E08BFFA002BDF78 /* tapeACallUITests */,
+				AD1D9F0D1E08BFFA002BDF78 /* Products */,
+				6517A94910891BCA2438C5A8 /* Pods */,
+				28ABEB23A1B8831FFDA83AD4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD1D9F0D1E08BFFA002BDF78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD1D9F0C1E08BFFA002BDF78 /* tapeACall.app */,
+				AD1D9F201E08BFFA002BDF78 /* tapeACallTests.xctest */,
+				AD1D9F2B1E08BFFA002BDF78 /* tapeACallUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD1D9F0E1E08BFFA002BDF78 /* tapeACall */ = {
+			isa = PBXGroup;
+			children = (
+				AD792EF31E0906EB00D2DCCF /* Model */,
+				AD792EF41E0906F200D2DCCF /* View */,
+				AD792EF51E0906F700D2DCCF /* Controller */,
+				AD1D9F0F1E08BFFA002BDF78 /* AppDelegate.swift */,
+				AD1D9F131E08BFFA002BDF78 /* Main.storyboard */,
+				AD1D9F161E08BFFA002BDF78 /* Assets.xcassets */,
+				AD1D9F181E08BFFA002BDF78 /* LaunchScreen.storyboard */,
+				AD1D9F1B1E08BFFA002BDF78 /* Info.plist */,
+				B2AD2D371E125E89001C53DC /* Constants.swift */,
+			);
+			path = tapeACall;
+			sourceTree = "<group>";
+		};
+		AD1D9F231E08BFFA002BDF78 /* tapeACallTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD1D9F241E08BFFA002BDF78 /* tapeACallTests.swift */,
+				AD1D9F261E08BFFA002BDF78 /* Info.plist */,
+			);
+			path = tapeACallTests;
+			sourceTree = "<group>";
+		};
+		AD1D9F2E1E08BFFA002BDF78 /* tapeACallUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD1D9F2F1E08BFFA002BDF78 /* tapeACallUITests.swift */,
+				AD1D9F311E08BFFA002BDF78 /* Info.plist */,
+			);
+			path = tapeACallUITests;
+			sourceTree = "<group>";
+		};
+		AD792EF31E0906EB00D2DCCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2AD2D351E125C02001C53DC /* Recording.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AD792EF41E0906F200D2DCCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD33C7951E092BD1006496A8 /* ItemRecordCell.swift */,
+				AD33C7911E0920FD006496A8 /* ItemSettingCell.swift */,
+				AD5E73701E0CD04800A9EA4B /* ItemAccessNumberCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AD792EF51E0906F700D2DCCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD44CD881E0B6D6C00885CD5 /* ViewController.swift */,
+				AD1D9F3D1E08CC10002BDF78 /* SettingVC.swift */,
+				AD1D9F111E08BFFA002BDF78 /* MainVC.swift */,
+				AD33C7971E093146006496A8 /* RecordingsVC.swift */,
+				AD5E736A1E0CCB4C00A9EA4B /* ChangeEmailVC.swift */,
+				AD5E736C1E0CCB8900A9EA4B /* AccountTableVC.swift */,
+				AD5E736E1E0CCCB900A9EA4B /* AccessNumberVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD1D9F0B1E08BFF9002BDF78 /* tapeACall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1D9F341E08BFFA002BDF78 /* Build configuration list for PBXNativeTarget "tapeACall" */;
+			buildPhases = (
+				60456D4CDEB7C3D796059087 /* [CP] Check Pods Manifest.lock */,
+				AD1D9F081E08BFF9002BDF78 /* Sources */,
+				AD1D9F091E08BFF9002BDF78 /* Frameworks */,
+				AD1D9F0A1E08BFF9002BDF78 /* Resources */,
+				E60833B87B36898632623BEC /* [CP] Embed Pods Frameworks */,
+				BC7D15EB48FBCAA4C66EB35A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tapeACall;
+			productName = tapeACall;
+			productReference = AD1D9F0C1E08BFFA002BDF78 /* tapeACall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD1D9F1F1E08BFFA002BDF78 /* tapeACallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1D9F371E08BFFA002BDF78 /* Build configuration list for PBXNativeTarget "tapeACallTests" */;
+			buildPhases = (
+				AD1D9F1C1E08BFFA002BDF78 /* Sources */,
+				AD1D9F1D1E08BFFA002BDF78 /* Frameworks */,
+				AD1D9F1E1E08BFFA002BDF78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD1D9F221E08BFFA002BDF78 /* PBXTargetDependency */,
+			);
+			name = tapeACallTests;
+			productName = tapeACallTests;
+			productReference = AD1D9F201E08BFFA002BDF78 /* tapeACallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD1D9F2A1E08BFFA002BDF78 /* tapeACallUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1D9F3A1E08BFFA002BDF78 /* Build configuration list for PBXNativeTarget "tapeACallUITests" */;
+			buildPhases = (
+				AD1D9F271E08BFFA002BDF78 /* Sources */,
+				AD1D9F281E08BFFA002BDF78 /* Frameworks */,
+				AD1D9F291E08BFFA002BDF78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD1D9F2D1E08BFFA002BDF78 /* PBXTargetDependency */,
+			);
+			name = tapeACallUITests;
+			productName = tapeACallUITests;
+			productReference = AD1D9F2B1E08BFFA002BDF78 /* tapeACallUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD1D9F041E08BFF9002BDF78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Pham Huu Dai";
+				TargetAttributes = {
+					AD1D9F0B1E08BFF9002BDF78 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = TMTSH3DC6B;
+						ProvisioningStyle = Automatic;
+					};
+					AD1D9F1F1E08BFFA002BDF78 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD1D9F0B1E08BFF9002BDF78;
+					};
+					AD1D9F2A1E08BFFA002BDF78 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD1D9F0B1E08BFF9002BDF78;
+					};
+				};
+			};
+			buildConfigurationList = AD1D9F071E08BFF9002BDF78 /* Build configuration list for PBXProject "tapeACall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD1D9F031E08BFF9002BDF78;
+			productRefGroup = AD1D9F0D1E08BFFA002BDF78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD1D9F0B1E08BFF9002BDF78 /* tapeACall */,
+				AD1D9F1F1E08BFFA002BDF78 /* tapeACallTests */,
+				AD1D9F2A1E08BFFA002BDF78 /* tapeACallUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD1D9F0A1E08BFF9002BDF78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1D9F1A1E08BFFA002BDF78 /* LaunchScreen.storyboard in Resources */,
+				AD1D9F171E08BFFA002BDF78 /* Assets.xcassets in Resources */,
+				AD1D9F151E08BFFA002BDF78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1D9F1E1E08BFFA002BDF78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1D9F291E08BFFA002BDF78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60456D4CDEB7C3D796059087 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC7D15EB48FBCAA4C66EB35A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tapeACall/Pods-tapeACall-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E60833B87B36898632623BEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tapeACall/Pods-tapeACall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD1D9F081E08BFF9002BDF78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD33C7961E092BD1006496A8 /* ItemRecordCell.swift in Sources */,
+				AD5E73711E0CD04800A9EA4B /* ItemAccessNumberCell.swift in Sources */,
+				AD1D9F121E08BFFA002BDF78 /* MainVC.swift in Sources */,
+				AD33C7981E093146006496A8 /* RecordingsVC.swift in Sources */,
+				AD1D9F3E1E08CC10002BDF78 /* SettingVC.swift in Sources */,
+				AD5E736D1E0CCB8900A9EA4B /* AccountTableVC.swift in Sources */,
+				AD44CD891E0B6D6C00885CD5 /* ViewController.swift in Sources */,
+				B2AD2D381E125E89001C53DC /* Constants.swift in Sources */,
+				B2AD2D361E125C02001C53DC /* Recording.swift in Sources */,
+				AD5E736B1E0CCB4C00A9EA4B /* ChangeEmailVC.swift in Sources */,
+				AD5E736F1E0CCCB900A9EA4B /* AccessNumberVC.swift in Sources */,
+				AD1D9F101E08BFFA002BDF78 /* AppDelegate.swift in Sources */,
+				AD33C7921E0920FD006496A8 /* ItemSettingCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1D9F1C1E08BFFA002BDF78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1D9F251E08BFFA002BDF78 /* tapeACallTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1D9F271E08BFFA002BDF78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1D9F301E08BFFA002BDF78 /* tapeACallUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD1D9F221E08BFFA002BDF78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD1D9F0B1E08BFF9002BDF78 /* tapeACall */;
+			targetProxy = AD1D9F211E08BFFA002BDF78 /* PBXContainerItemProxy */;
+		};
+		AD1D9F2D1E08BFFA002BDF78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD1D9F0B1E08BFF9002BDF78 /* tapeACall */;
+			targetProxy = AD1D9F2C1E08BFFA002BDF78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD1D9F131E08BFFA002BDF78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD1D9F141E08BFFA002BDF78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD1D9F181E08BFFA002BDF78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD1D9F191E08BFFA002BDF78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD1D9F321E08BFFA002BDF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD1D9F331E08BFFA002BDF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD1D9F351E08BFFA002BDF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 635F0833AE51E9BEF24D09D9 /* Pods-tapeACall.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TMTSH3DC6B;
+				INFOPLIST_FILE = tapeACall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BeeInTime.callrecording-com.BeeInTime.callrecording";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AD1D9F361E08BFFA002BDF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A9C359FD144B7CBA5397E0E /* Pods-tapeACall.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TMTSH3DC6B;
+				INFOPLIST_FILE = tapeACall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BeeInTime.callrecording-com.BeeInTime.callrecording";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AD1D9F381E08BFFA002BDF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = tapeACallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dai.tapeACallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tapeACall.app/tapeACall";
+			};
+			name = Debug;
+		};
+		AD1D9F391E08BFFA002BDF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = tapeACallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dai.tapeACallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tapeACall.app/tapeACall";
+			};
+			name = Release;
+		};
+		AD1D9F3B1E08BFFA002BDF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = tapeACallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dai.tapeACallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = tapeACall;
+			};
+			name = Debug;
+		};
+		AD1D9F3C1E08BFFA002BDF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = tapeACallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dai.tapeACallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = tapeACall;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD1D9F071E08BFF9002BDF78 /* Build configuration list for PBXProject "tapeACall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1D9F321E08BFFA002BDF78 /* Debug */,
+				AD1D9F331E08BFFA002BDF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1D9F341E08BFFA002BDF78 /* Build configuration list for PBXNativeTarget "tapeACall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1D9F351E08BFFA002BDF78 /* Debug */,
+				AD1D9F361E08BFFA002BDF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1D9F371E08BFFA002BDF78 /* Build configuration list for PBXNativeTarget "tapeACallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1D9F381E08BFFA002BDF78 /* Debug */,
+				AD1D9F391E08BFFA002BDF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1D9F3A1E08BFFA002BDF78 /* Build configuration list for PBXNativeTarget "tapeACallUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1D9F3B1E08BFFA002BDF78 /* Debug */,
+				AD1D9F3C1E08BFFA002BDF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD1D9F041E08BFF9002BDF78 /* Project object */;
+}

@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.2.0)
+  - NexmoVerify (1.0.5):
+    - NexmoVerify/Core (= 1.0.5)
+  - NexmoVerify/Core (1.0.5):
+    - NexmoVerify/DeviceProperties (~> 1.0.5)
+    - NexmoVerify/RequestSigning (~> 1.0.5)
+  - NexmoVerify/DeviceProperties (1.0.5)
+  - NexmoVerify/RequestSigning (1.0.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - NexmoVerify
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  NexmoVerify: 309602edd53f355cfe2ac14e2d34c5cf7742808a
+
+PODFILE CHECKSUM: 89ad9b84394886b500c2a13f11a05c0148259682
+
+COCOAPODS: 1.2.0.beta.1
