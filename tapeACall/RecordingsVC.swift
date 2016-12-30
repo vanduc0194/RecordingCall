@@ -7,18 +7,51 @@
 //
 
 import UIKit
+import Alamofire
+import AVFoundation
 
 class RecordingsVC: ViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var recordPlayer: AVAudioPlayer!
+    
     @IBOutlet weak var playSongView: UIView!
 
+    @IBOutlet weak var playBtn: UIButton!
+    
+    @IBOutlet weak var pauseBtn: UIButton!
+
+    @IBOutlet weak var sliderTime: UISlider!
+
     @IBOutlet weak var tableView: UITableView!
+
     
     @IBAction func closeBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
- //   var recording = Recording!
+    @IBAction func playBtn(_ sender: UIButton) {
+            playBtn.isHidden = true
+            pauseBtn.isHidden = false
+            recordPlayer.play()
+    }
+    
+    @IBAction func pauseBtn(_ sender: UIButton) {
+            playBtn.isHidden = false
+            pauseBtn.isHidden = true
+            recordPlayer.stop()
+    }
+    
+    @IBAction func shareBtn(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func sliderTime(_ sender: UISlider) {
+        recordPlayer.currentTime = TimeInterval(sliderTime.value)
+
+    }
+    
+ 
+    //   var recording = Recording!
     var recordings = [Recording]()
     
     override func viewDidLoad() {
@@ -26,21 +59,36 @@ class RecordingsVC: ViewController, UITableViewDataSource, UITableViewDelegate {
         
         tableView.delegate = self
         tableView.dataSource = self
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         self.dowloadRecordingData {   }
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+    }
+    
     func dowloadRecordingData (completed: @escaping DownloadComplete) {
+        let url = URL(string: "http://tape-a-call.herokuapp.com/getfile/")!
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "POST"
+        let parameters = ["phoneNumber" : "+841678355212"]
+        do {
+         urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
+        } catch {
+            print("Error errrroooor!!!")
+        }
         
-        Alamofire.request(URL_RECORDING).responseJSON { response in
-            
-            if let dict = response.result.value as? Dictionary <String, String> {
-                for obj in dict {
-                    let recording = Recording(dict: obj)
+        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        Alamofire.request(urlRequest).responseJSON { response in
+            print(urlRequest)
+            print("Start load data!!!")
+            print(response)
+           // if let dict = response.result.value as? Dictionary<String, AnyObject>{
+            if let array = response.result.value as? Array<Any> {
+                for obj in array  {
+                    let recording = Recording(dict: obj as! Dictionary<String, AnyObject>)
                     self.recordings.append(recording)
                 }
                 self.tableView.reloadData()
@@ -63,8 +111,7 @@ class RecordingsVC: ViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "ItemRecordCell", for: indexPath) as! ItemRecordCell {
-            
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "itemRecordCell", for: indexPath) as? ItemRecordCell {
             let recording = recordings[indexPath.row]
             cell.configureCell(recording: recording)
             return cell
@@ -75,45 +122,88 @@ class RecordingsVC: ViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       // tableView.layoutMargins.bottom = 50
-        //var record: Recording!
-      
-        var linkRecord = recordings[indexPath.row].link
-        let url = NSURL(string: "http://radio.spainmedia.es/wp-content/uploads/2015/12/tailtoddle_lo4.mp3")
-        print("the url = \(url!)")
-        self.downloadFileFromURL(url!)
+       
+        //playSongView.isHidden = false
+        
+        //download recording from Internet
+        let url = recordings[indexPath.row].link
+        let path = downloadRecording(url: "http://radio.spainmedia.es/wp-content/uploads/2015/12/ogilvy.mp3")
+        
+        //play recording 
+        playRecording(path: path)
+        
+    }
+    
+    
+    func downloadRecording(url: String) -> String {
+        if let audioUrl = URL(string: url) {
+            
+            // then lets create your document folder url
+            let documentsDirectoryURL =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+            
+            // lets create your destination file url
+            let destinationUrl = documentsDirectoryURL.appendingPathComponent(audioUrl.lastPathComponent)
+            
+            // to check if it exists before downloading it
+            if FileManager.default.fileExists(atPath: destinationUrl.path) {
+                print("The file already exists at path")
+                playSongView.isHidden = false
 
-        playSongView.isHidden = false
-    }
-    
-    
-    func downloadFileFromURL(url: URL){
-        var downloadTask:NSURLSessionDownloadTask
-        downloadTask = NSURLSession.sharedSession().downloadTaskWithURL(url, completionHandler: { (URL, response, error) -> Void in
+                // if the file doesn't exist
+            } else {
+                
+                // you can use NSURLSession.sharedSession to download the data asynchronously
+                URLSession.shared.downloadTask(with: audioUrl, completionHandler: { (location, response, error) -> Void in
+                    guard let location = location, error == nil else { return }
+                    do {
+                        // after downloading your file you need to move it to your destination url
+                        try FileManager.default.moveItem(at: location, to: destinationUrl)
+                        print("File moved to documents folder")
+                        self.playSongView.isHidden = false
+
+                    } catch let error as NSError {
+                        print(error.localizedDescription)
+                    }
+                }).resume()
+            }
             
-            self.play(URL!)
-            
-        })
-        
-        downloadTask.resume()
-        
-    }
+            print(destinationUrl.path)
+            return destinationUrl.path
     
-    func play(url:NSURL) {
-        print("playing \(url)")
-        
-        do {
-            self.player = try AVAudioPlayer(contentsOfURL: url)
-            player.prepareToPlay()
-            player.volume = 1.0
-            player.play()
-        } catch let error as NSError {
-            //self.player = nil
-            print(error.localizedDescription)
-        } catch {
-            print("AVAudioPlayer init failed")
+        } else {
+            return ""
         }
-        
     }
-  
+    
+    func playRecording(path: String) {
+        
+        //play audio with path
+        playBtn.isHidden = true
+
+        do {
+            
+            recordPlayer = try AVAudioPlayer(contentsOf: URL(string: path)!)
+            recordPlayer.prepareToPlay()
+//            recordPlayer.numberOfLoops = -1
+            recordPlayer.play()
+
+            sliderTime.maximumValue = Float(recordPlayer.duration)
+            sliderTime.value = 0.0
+            Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateTime), userInfo: nil, repeats: true)
+            
+        } catch let err as NSError{
+            
+            print(err.debugDescription)
+            
+        }
+    }
+    
+    func updateTime(_ timer: Timer) {
+        sliderTime.value = Float(recordPlayer.currentTime)
+        if recordPlayer.currentTime == 0.0 {
+            playBtn.isHidden = false
+            pauseBtn.isHidden = true
+        }
+    }
+    
 }

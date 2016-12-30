@@ -21,7 +21,7 @@ class ItemRecordCell: UITableViewCell {
     func configureCell(recording: Recording) {
         nameRecordLbl.text = recording.name
         dateRecordingLbl.text = recording.date
-        timeRecordLbl.text = recording.time
+        timeRecordLbl.text = recording.duration
         link = recording.link
     }
 

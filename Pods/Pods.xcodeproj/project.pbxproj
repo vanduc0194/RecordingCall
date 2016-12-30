@@ -144,11 +144,11 @@
 		4F99DBDB6EF386A871E3C7EA2FD43B34 /* SDKDeviceProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDKDeviceProperties.m; path = DeviceProperties/SDKDeviceProperties.m; sourceTree = "<group>"; };
 		4FC73404FF6F1EB9D60837EEB456230B /* SDKDeviceProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDKDeviceProperties.h; path = DeviceProperties/SDKDeviceProperties.h; sourceTree = "<group>"; };
 		54535CB0BE1FF0852DC4E4E6C1770196 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		578A3D05DB0C4EAC79BCA62B0B84ABBF /* Pods-tapeACall.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-tapeACall.modulemap"; sourceTree = "<group>"; };
+		578A3D05DB0C4EAC79BCA62B0B84ABBF /* Pods-tapeACall.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-tapeACall.modulemap"; sourceTree = "<group>"; };
 		5CDB7140951DFB01D49D27ED0F21BBBB /* Data+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Helper.swift"; path = "VerifySDK/Data+Helper.swift"; sourceTree = "<group>"; };
-		5E5404A5059CCDE67A2231D096A48CEE /* VerifyUI.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; name = VerifyUI.storyboard; path = VerifySDK/VerifyUI.storyboard; sourceTree = "<group>"; };
+		5E5404A5059CCDE67A2231D096A48CEE /* VerifyUI.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = VerifyUI.storyboard; path = VerifySDK/VerifyUI.storyboard; sourceTree = "<group>"; };
 		5F6ED26F0461B923B37FBDE15077A522 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		61BBDD9292D810D24A4115EEC256E70D /* NexmoVerify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NexmoVerify.framework; path = NexmoVerify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61BBDD9292D810D24A4115EEC256E70D /* NexmoVerify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NexmoVerify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63359DEAF156FF71E385C19C68B3BE78 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = VerifySDK/Config.swift; sourceTree = "<group>"; };
 		663E93B4547B4706CE57076B5E3D0F23 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		6D34AA5F86B3065582F51B916F7BED3A /* VerifyUIController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerifyUIController.swift; path = VerifySDK/VerifyUIController.swift; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 		8F78133FF599D2E4A74FA0823AD0A4A5 /* NexmoVerify-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NexmoVerify-umbrella.h"; sourceTree = "<group>"; };
 		915A3C05D4A889664A8D7DEB45D51B6D /* HttpResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpResponse.swift; path = VerifySDK/HttpResponse.swift; sourceTree = "<group>"; };
 		9227EB354DB9A53045DB2BFCC4D72319 /* LogoutResponseFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogoutResponseFactory.swift; path = VerifySDK/LogoutResponseFactory.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		958C9E9AED56A892E9775B496D2995DB /* ControlRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlRequest.swift; path = VerifySDK/ControlRequest.swift; sourceTree = "<group>"; };
 		9B37C544CF0A4E25D234610FC3CC6FEE /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		9CFCB92FD52F01F61E7EA3DA9716EE71 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
@@ -194,18 +194,18 @@
 		C8D481D1CA12C218FC1762BD8C461744 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CBB4A2A61DEA2A49DE40E25561F4CA86 /* NexmoRequestSigning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NexmoRequestSigning.h; path = RequestSigning/NexmoRequestSigning.h; sourceTree = "<group>"; };
-		CC9085208241DF882FC6B0825719CC09 /* Pods_tapeACall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_tapeACall.framework; path = "Pods-tapeACall.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9085208241DF882FC6B0825719CC09 /* Pods_tapeACall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tapeACall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE688EE509DDA2179B6D8A6AAFCF8F9E /* ControlResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlResponse.swift; path = VerifySDK/ControlResponse.swift; sourceTree = "<group>"; };
 		CF0B9970E2F987076246D9E4458C5384 /* NexmoVerify-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NexmoVerify-prefix.pch"; sourceTree = "<group>"; };
 		D13E0EE63F08255A6177A63372D357B0 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		D1E367C20270A26B88405DB26E1D0F9E /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		D1E367C20270A26B88405DB26E1D0F9E /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		DB80F325CC9B6099BB32D285A0B83946 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = VerifySDK/Info.plist; sourceTree = "<group>"; };
 		DC949D11F0FA737750BA255EA253D817 /* SearchResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchResponse.swift; path = VerifySDK/SearchResponse.swift; sourceTree = "<group>"; };
 		DCB9A5423E9C22C062B22128D7A25CD2 /* HttpRequestBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpRequestBuilder.swift; path = VerifySDK/HttpRequestBuilder.swift; sourceTree = "<group>"; };
 		DDAF9C24B503505FFD19E0AC3CE5C240 /* SDKVerifyService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SDKVerifyService.swift; path = VerifySDK/SDKVerifyService.swift; sourceTree = "<group>"; };
 		DF3FF1AA6B58356FF841C79DCF69726C /* Pods-tapeACall-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tapeACall-resources.sh"; sourceTree = "<group>"; };
 		DF40DCA10A8D76AC210E2F1D9D72896C /* NexmoClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NexmoClient.swift; path = VerifySDK/NexmoClient.swift; sourceTree = "<group>"; };
-		E48C45E70491BFA2B25DC92D8780A0BA /* NexmoVerify.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NexmoVerify.modulemap; sourceTree = "<group>"; };
+		E48C45E70491BFA2B25DC92D8780A0BA /* NexmoVerify.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NexmoVerify.modulemap; sourceTree = "<group>"; };
 		E5EA67EED5AF6BAE0888DF045BF56D5B /* BaseResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseResponse.swift; path = VerifySDK/BaseResponse.swift; sourceTree = "<group>"; };
 		EE1253500A3D99D7D0CCCE8A451353B4 /* SearchService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchService.swift; path = VerifySDK/SearchService.swift; sourceTree = "<group>"; };
 		EF0025BD6478579DC54FB75C03118C9D /* Pods-tapeACall-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tapeACall-frameworks.sh"; sourceTree = "<group>"; };
@@ -214,7 +214,7 @@
 		F564E7DB17591FAF2A98837114110510 /* SearchRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchRequest.swift; path = VerifySDK/SearchRequest.swift; sourceTree = "<group>"; };
 		F86E31EAA23DC02488A2FE91F57102C9 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		FC9D1D42824C9BB4D8D20A5811ECAC52 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		FF1EDE1CDFE270CA9CC7DD8CD7950094 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1EDE1CDFE270CA9CC7DD8CD7950094 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,7 +267,6 @@
 				9CFCB92FD52F01F61E7EA3DA9716EE71 /* Validation.swift */,
 				DC304A8B191C623892F1DF4B781560F1 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -453,7 +452,6 @@
 				1E6BA631EC34C1645B3FEA974F2CD07A /* RequestSigning */,
 				F97B58F112648740A3BC522192B9A903 /* Support Files */,
 			);
-			name = NexmoVerify;
 			path = NexmoVerify;
 			sourceTree = "<group>";
 		};
@@ -569,7 +567,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -717,11 +715,12 @@
 			baseConfigurationReference = B34D17F9405428A41126B62D746C1108 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -730,7 +729,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -758,15 +757,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -780,7 +783,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -938,14 +941,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -956,9 +963,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -982,7 +990,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;

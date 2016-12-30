@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Alamofire
 
 typealias DownloadComplete = () -> ()
-let URL_RECORDING = ""
+
+

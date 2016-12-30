@@ -147,11 +147,11 @@
 				AD792EF41E0906F200D2DCCF /* View */,
 				AD792EF51E0906F700D2DCCF /* Controller */,
 				AD1D9F0F1E08BFFA002BDF78 /* AppDelegate.swift */,
+				B2AD2D371E125E89001C53DC /* Constants.swift */,
 				AD1D9F131E08BFFA002BDF78 /* Main.storyboard */,
 				AD1D9F161E08BFFA002BDF78 /* Assets.xcassets */,
 				AD1D9F181E08BFFA002BDF78 /* LaunchScreen.storyboard */,
 				AD1D9F1B1E08BFFA002BDF78 /* Info.plist */,
-				B2AD2D371E125E89001C53DC /* Constants.swift */,
 			);
 			path = tapeACall;
 			sourceTree = "<group>";
@@ -560,6 +560,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TMTSH3DC6B;
 				INFOPLIST_FILE = tapeACall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BeeInTime.callrecording-com.BeeInTime.callrecording";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -575,6 +576,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TMTSH3DC6B;
 				INFOPLIST_FILE = tapeACall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BeeInTime.callrecording-com.BeeInTime.callrecording";
 				PRODUCT_NAME = "$(TARGET_NAME)";
