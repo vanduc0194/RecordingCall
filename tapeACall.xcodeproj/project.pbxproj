@@ -24,6 +24,7 @@
 		AD5E736D1E0CCB8900A9EA4B /* AccountTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5E736C1E0CCB8900A9EA4B /* AccountTableVC.swift */; };
 		AD5E736F1E0CCCB900A9EA4B /* AccessNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5E736E1E0CCCB900A9EA4B /* AccessNumberVC.swift */; };
 		AD5E73711E0CD04800A9EA4B /* ItemAccessNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5E73701E0CD04800A9EA4B /* ItemAccessNumberCell.swift */; };
+		B2A8E4AC1E174F48002C0935 /* private.key in Resources */ = {isa = PBXBuildFile; fileRef = B2A8E4AB1E174F48002C0935 /* private.key */; };
 		B2AD2D361E125C02001C53DC /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AD2D351E125C02001C53DC /* Recording.swift */; };
 		B2AD2D381E125E89001C53DC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AD2D371E125E89001C53DC /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 		AD5E736C1E0CCB8900A9EA4B /* AccountTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableVC.swift; sourceTree = "<group>"; };
 		AD5E736E1E0CCCB900A9EA4B /* AccessNumberVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessNumberVC.swift; sourceTree = "<group>"; };
 		AD5E73701E0CD04800A9EA4B /* ItemAccessNumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemAccessNumberCell.swift; sourceTree = "<group>"; };
+		B2A8E4AB1E174F48002C0935 /* private.key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private.key; sourceTree = "<group>"; };
 		B2AD2D351E125C02001C53DC /* Recording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
 		B2AD2D371E125E89001C53DC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D3F4E825FE1494FB7401751C /* Pods_tapeACall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tapeACall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +150,7 @@
 				AD792EF51E0906F700D2DCCF /* Controller */,
 				AD1D9F0F1E08BFFA002BDF78 /* AppDelegate.swift */,
 				B2AD2D371E125E89001C53DC /* Constants.swift */,
+				B2A8E4AB1E174F48002C0935 /* private.key */,
 				AD1D9F131E08BFFA002BDF78 /* Main.storyboard */,
 				AD1D9F161E08BFFA002BDF78 /* Assets.xcassets */,
 				AD1D9F181E08BFFA002BDF78 /* LaunchScreen.storyboard */,
@@ -318,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD1D9F1A1E08BFFA002BDF78 /* LaunchScreen.storyboard in Resources */,
+				B2A8E4AC1E174F48002C0935 /* private.key in Resources */,
 				AD1D9F171E08BFFA002BDF78 /* Assets.xcassets in Resources */,
 				AD1D9F151E08BFFA002BDF78 /* Main.storyboard in Resources */,
 			);

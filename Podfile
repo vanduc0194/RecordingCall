@@ -5,4 +5,5 @@ use_frameworks!
 target 'tapeACall' do
 pod 'NexmoVerify'
 pod 'Alamofire', '~> 4.0'
+pod 'JSONWebToken'
 end

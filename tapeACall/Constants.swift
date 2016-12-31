@@ -11,4 +11,6 @@ import Alamofire
 
 typealias DownloadComplete = () -> ()
 
+let APPLICATION_ID = "ef6eae53-ffe5-42a5-ab00-dfbff8125f35"
+
 
